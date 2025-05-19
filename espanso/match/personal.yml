@@ -1,0 +1,36 @@
+matches:
+  - trigger: ":name"
+    replace: "Felipe Ferreira"
+  - trigger: ":fname"
+    replace: "Felipe Ferreira Bezerra da Silva"
+
+  - trigger: ":bd"
+    replace: "20/05/1996"
+  - trigger: ":cpf"
+    replace: "10026736403"
+  - trigger: ":rg"
+    replace: "3017280"
+  - trigger: ":addr"
+    replace: "Rua Marcia Carneiro Morais de Oliveira, 281, Bloco 5, Apto 301, Mangabeira, João Pessoa - PB, CEP 58058-565"
+  - trigger: ":cep"
+    replace: "58058-565"
+  - trigger: ":phone"
+    replace: "83 996039682"
+  - trigger: ":email"
+    replace: "felipeffbs3x@gmail.com"
+  - trigger: ":linkedin"
+    replace: "https://linkedin.com/in/felipefbs"
+  - trigger: ":in"
+    replace: "https://linkedin.com/in/felipefbs"
+  - trigger: ":gh"
+    replace: "https://github.com/felipefbs"
+
+  - trigger: ":agencia"
+    replace: "7981"
+  - trigger: ":conta"
+    replace: "41210-4"
+  - trigger: ":banco"
+    replace: |
+      Itaú Unibanco (341)
+      Agência: 7981
+      Conta: 41210-4
