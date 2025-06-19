@@ -15,8 +15,7 @@ matches:
       - name: mydate
         type: date
         params:
-          format: "%m/%d/%Y"
-
+          format: "%Y-%m-%d"
   # Print the output of a shell command
   - trigger: ":shell"
     replace: "{{output}}"
@@ -53,11 +52,4 @@ matches:
         type: shell
         params:
           cmd: 'date -d $ESPANSO_CLIPBOARD "+%d-%m-%Y"'
-  - trigger: ":saft"
-    replace: "29u%vH8tY3A^bnp&"
-  - trigger: "tf"
-    replace: "terraform"
-  - trigger: "eÉ"
-    replace: "É"
-  - trigger: "eé"
-    replace: "É"
+
