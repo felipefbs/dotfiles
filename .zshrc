@@ -26,6 +26,8 @@ export GOPATH="$HOME/go"
 export PATH="$PATH:$GOPATH/bin"
 export PATH="$PATH:/home/felipe/github.com/felipefbs/scripts"
 export EDITOR='nvim'
+export GTK_IM_MODULE=cedilla
+export QT_IM_MODULE=cedilla
 
 ## Alias
 
