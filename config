@@ -1,0 +1,48 @@
+[user]
+	name = Felipe Ferreira
+	email = felipeffbs3x@gmail.com
+[core]
+	compression = 9 # utiliza mais cpu para ganhar armazenamento e menor uso de rede
+	whitespace = error # da erro quando tenta dar commit espaços
+	preloadindex = true # faz carregar o index em memoria e aumenta performance
+[advice]
+	addEmptyPathspec = false
+	pushNonFastFoward = false
+	statusHints = false
+[init]
+	defaultBranch = main
+[status]
+	branch = true # mostra o nome da branch no output
+	showStash = true # mostra as informações de stash
+	showUntrackedFiles = all # mostra todos os untracked files sem agrupar em diretorios
+[interactive]
+	diffFilter = diff-so-fancy --patch
+	singleKey = true
+[push]
+	autoSetupRemote = true
+	default = current # push apenas na branch atual
+	followTags = true # envia as tags junto
+[pull]
+	default = current
+	rebase = true
+[log]
+	abbrevCommit = true # abrevia o hash dos commits 
+	graphColors = blue,yellow,cyan,magenta,green,red
+[color "decorate"]
+	HEAD = red
+	branch = blue
+	tag = yellow
+	remoteBranch = magenta
+[color "branch"]
+	current = magenta
+	local = default
+	remote = yellow
+	upstram = geen
+	plain = blue
+[branch]
+	sort = -committerdate
+[tag]
+	sort = -taggerdate
+[pager]
+	branch = false
+	tag = false
