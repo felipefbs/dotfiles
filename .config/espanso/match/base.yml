@@ -53,3 +53,5 @@ matches:
         params:
           cmd: 'date -d $ESPANSO_CLIPBOARD "+%d-%m-%Y"'
 
+  - trigger: ":pi"
+    replace: "192.168.0.9"
