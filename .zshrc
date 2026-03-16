@@ -16,7 +16,7 @@ ENABLE_CORRECTION="true"
 plugins=(git vscode)
 
 # Source Oh-My-Zsh
-source $ZSH/oh-my-zsh.sh
+# source $ZSH/oh-my-zsh.sh
 
 # User Configuration
 
@@ -29,12 +29,13 @@ export PATH="$PATH:/usr/local/nvim/bin"
 export EDITOR='nvim'
 export GTK_IM_MODULE=cedilla
 export QT_IM_MODULE=cedilla
+export XCOMPOSEFILE=/usr/share/X11/locale/pt_BR.UTF-8/Compose
 
 ## Alias
 
 ### Apt Alias
 alias at="sudo apt update"
-alias att="sudo apt update && sudo apt upgrade -y"
+alias att="sudo pacman -Syu"
 alias autoremove="sudo apt autoremove"
 alias autoclean="sudo apt autoclean"
 alias install="at && sudo apt install -y"
@@ -97,3 +98,24 @@ zinit light zsh-users/zsh-autosuggestions
 zinit light Aloxaf/fzf-tab
 zinit light spaceship-prompt/spaceship-prompt
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+
+# Opções para melhorar a manipulação do histórico
+setopt APPEND_HISTORY       # adiciona comandos ao arquivo, não sobrescreve
+setopt INC_APPEND_HISTORY   # grava cada comando imediatamente no arquivo
+setopt SHARE_HISTORY        # compartilha o histórico entre várias sessões zsh
+setopt HIST_IGNORE_DUPS     # ignora comandos duplicados consecutivos
+setopt HIST_EXPIRE_DUPS_FIRST  # remove duplicados antigos primeiro
+setopt HIST_SAVE_NO_DUPS    # não grava duplicados no arquivo
+setopt HIST_IGNORE_SPACE    # ignora comandos que começam com espaço
+setopt HIST_REDUCE_BLANKS   # remove espaços em branco extras dos comandos
+
+bindkey "\033[1~" beginning-of-line  # Home
+bindkey "\033[4~" end-of-line        # End
+bindkey "\e[1;5C" forward-word   # Ctrl + seta direita
+bindkey "\e[1;5D" backward-word  # Ctrl + seta esquerda
+bindkey "^[[H" beginning-of-line
+bindkey "^[[F" end-of-line
