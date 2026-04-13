@@ -16,7 +16,7 @@ vim.opt.shiftwidth = 2 		  -- ident width
 vim.opt.softtabstop = 2		  -- soft tab stop not tabs on tab/backspace
 vim.opt.expandtab = true	  -- use spaces instead of tabs
 vim.opt.smartindent = true	-- smart auto-dent
-vim.opt.autoindent = true	  -- copy ident from current line 
+vim.opt.autoindent = true	  -- copy ident from current line
 
 vim.opt.ignorecase = true   -- case insensitive search
 vim.opt.smartcase = true    -- case sensitive if uppercase in string
@@ -39,7 +39,7 @@ vim.opt.synmaxcol = 300     -- syntax highlighting limit
 vim.opt.fillchars = { eob = " " } -- hide "~" on empty lines
 
 local undodir = vim.fn.expand("~/.vim/undodir")
-if 
+if
     vim.fn.isdirectory(undodir) == 0 -- create undodir if nonexistent
 then
     vim.fn.mkdir(undodir, "p")
@@ -66,7 +66,7 @@ vim.opt.selection = "inclusive" --  include last char in selection
 vim.opt.mouse = "a" -- enable mouse support
 vim.opt.clipboard:append("unnamedplus") -- use system clipboard
 vim.opt.modifiable = true -- allow buffer modifications
-vim.opt.encoding = "UTF-8"  --set enconding 
+vim.opt.encoding = "UTF-8"  --set enconding
 
 vim.opt.guicursor =
 	"n-v-c:block,i-ci-ve:block,r-cr:hor20,o:hor50,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor,sm:block-blinkwait175-blinkoff150-blinkon175" -- cursor blinking and settings
