@@ -33,6 +33,9 @@ export XCOMPOSEFILE=/usr/share/X11/locale/pt_BR.UTF-8/Compose
 
 ## Alias
 
+### ls
+alias la="ls -lha"
+
 ### Apt Alias
 alias at="sudo apt update"
 alias att="sudo pacman -Syu"
@@ -53,6 +56,15 @@ alias gl="git log --all --graph --pretty=format:'%C(magenta)%h %C(white) %an  %a
 alias gb="git branch"
 alias gi="git init"
 alias gcl="git clone"
+
+### TMUX
+alias tmux="tmux new-session -A -s bazzite "
+
+### helpers
+alias reset-audio="systemctl --user restart wireplumber pipewire pipewire-pulse"
+
+### zoxide
+alias cd=z
 
 ## Spaceship Prompt Configuration
 SPACESHIP_USER_SHOW=always
@@ -119,3 +131,5 @@ bindkey "\e[1;5C" forward-word   # Ctrl + seta direita
 bindkey "\e[1;5D" backward-word  # Ctrl + seta esquerda
 bindkey "^[[H" beginning-of-line
 bindkey "^[[F" end-of-line
+
+eval "$(zoxide init zsh)"
