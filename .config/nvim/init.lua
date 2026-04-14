@@ -292,6 +292,8 @@ vim.keymap.set("n", "<leader>td", function()
 	vim.diagnostic.enable(not vim.diagnostic.is_enabled())
 end, { desc = "Toggle diagnostics" })
 
+-- Salvar com Ctrl+S no modo Normal, Inserção e Visual
+vim.keymap.set({ 'n', 'i', 'v' }, '<C-s>', '<Esc>:w<CR>', { desc = 'Salvar arquivo' })
 
 -- ============================================================================
 -- AUTOCMDS
