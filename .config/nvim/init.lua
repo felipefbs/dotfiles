@@ -34,7 +34,7 @@ vim.opt.pumblend = 10       -- popup menu transparency
 vim.opt.winblend = 0        -- floating window transparency
 vim.opt.conceallevel = 0    -- do not hide markup
 vim.opt.concealcursor = ""  -- do not hide cursosrline in markup
-vim.opt.lazyredraw = trye   -- do not redraw during macros
+vim.opt.lazyredraw = true   -- do not redraw during macros
 vim.opt.synmaxcol = 300     -- syntax highlighting limit
 vim.opt.fillchars = { eob = " " } -- hide "~" on empty lines
 
