@@ -716,6 +716,7 @@ require("blink.cmp").setup({
 		["<Tab>"] = { "snippet_forward", "fallback" },
 		["<S-Tab>"] = { "snippet_backward", "fallback" },
 	},
+	signature = {enabled=true, window = {border="rounded"}},
 	appearance = { nerd_font_variant = "mono" },
 	completion = { menu = { auto_show = true } },
 	sources = { default = { "lsp", "path", "buffer", "snippets" } },
