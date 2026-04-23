@@ -1,3 +1,4 @@
+require("plugins.which-key")
 require("plugins.dap")
 vim.opt.termguicolors = true
 vim.cmd.colorscheme("habamax")
