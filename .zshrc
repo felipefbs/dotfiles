@@ -57,8 +57,6 @@ alias gb="git branch"
 alias gi="git init"
 alias gcl="git clone"
 
-### TMUX
-alias tmux="tmux new-session -A -s bazzite "
 
 ### helpers
 alias reset-audio="systemctl --user restart wireplumber pipewire pipewire-pulse"
@@ -133,3 +131,5 @@ bindkey "^[[H" beginning-of-line
 bindkey "^[[F" end-of-line
 
 eval "$(zoxide init zsh)"
+
+fpath=($HOME/.zsh_completions $fpath)
